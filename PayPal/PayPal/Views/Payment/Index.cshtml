@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Payment Checkout";
+}
+
+
+
+<h2>Payment Checkout</h2>
+
+<p>Click the button below to proceed with PayPal checkout:</p>
+
+<form action="@Url.Action("Checkout", "Payment")" method="post">
+    <button type="submit" class="btn btn-primary">Pay with PayPal</button>
+    <h1>hello world im batool</h1>
+</form>

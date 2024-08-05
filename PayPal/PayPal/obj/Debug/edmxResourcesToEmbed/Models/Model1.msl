@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="electionModelStoreContainer" CdmEntityContainer="electionEntities">
+    <EntitySetMapping Name="Ads">
+      <EntityTypeMapping TypeName="electionModel.Ad">
+        <MappingFragment StoreEntitySet="Ad">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="img_url" ColumnName="img_url" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="transaction_id" ColumnName="transaction_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="electionModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="candidates">
+      <EntityTypeMapping TypeName="electionModel.candidate">
+        <MappingFragment StoreEntitySet="candidate">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="election_list_id" ColumnName="election_list_id" />
+          <ScalarProperty Name="type_of_chair" ColumnName="type_of_chair" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="vote_count" ColumnName="vote_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="candidate_request">
+      <EntityTypeMapping TypeName="electionModel.candidate_request">
+        <MappingFragment StoreEntitySet="candidate_request">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="election_list_request_id" ColumnName="election_list_request_id" />
+          <ScalarProperty Name="type_of_chair" ColumnName="type_of_chair" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="contact_us">
+      <EntityTypeMapping TypeName="electionModel.contact_us">
+        <MappingFragment StoreEntitySet="contact_us">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="subject" ColumnName="subject" />
+          <ScalarProperty Name="message" ColumnName="message" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="debates">
+      <EntityTypeMapping TypeName="electionModel.debate">
+        <MappingFragment StoreEntitySet="debates">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="requested_date" ColumnName="requested_date" />
+          <ScalarProperty Name="topic" ColumnName="topic" />
+          <ScalarProperty Name="first_list" ColumnName="first_list" />
+          <ScalarProperty Name="second_list" ColumnName="second_list" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="Zoom_link" ColumnName="Zoom_link" />
+          <ScalarProperty Name="details" ColumnName="details" />
+          <ScalarProperty Name="debate_date" ColumnName="debate_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="districts">
+      <EntityTypeMapping TypeName="electionModel.district">
+        <MappingFragment StoreEntitySet="district">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="competitive_seat" ColumnName="competitive_seat" />
+          <ScalarProperty Name="women_seats" ColumnName="women_seats" />
+          <ScalarProperty Name="christian_seats" ColumnName="christian_seats" />
+          <ScalarProperty Name="circassians_seats" ColumnName="circassians_seats" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="election_dates">
+      <EntityTypeMapping TypeName="electionModel.election_dates">
+        <MappingFragment StoreEntitySet="election_dates">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nomination_start_date" ColumnName="nomination_start_date" />
+          <ScalarProperty Name="nomination_end_date" ColumnName="nomination_end_date" />
+          <ScalarProperty Name="election_start_date" ColumnName="election_start_date" />
+          <ScalarProperty Name="election_end_date" ColumnName="election_end_date" />
+          <ScalarProperty Name="results_date" ColumnName="results_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="election_list">
+      <EntityTypeMapping TypeName="electionModel.election_list">
+        <MappingFragment StoreEntitySet="election_list">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="district_id" ColumnName="district_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="vote_count" ColumnName="vote_count" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="election_list_request">
+      <EntityTypeMapping TypeName="electionModel.election_list_request">
+        <MappingFragment StoreEntitySet="election_list_request">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="district_id" ColumnName="district_id" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="transactions">
+      <EntityTypeMapping TypeName="electionModel.transaction">
+        <MappingFragment StoreEntitySet="transactions">
+          <ScalarProperty Name="paypal_transaction_id" ColumnName="paypal_transaction_id" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="status" ColumnName="status" />
+          <ScalarProperty Name="amount" ColumnName="amount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="voter_user">
+      <EntityTypeMapping TypeName="electionModel.voter_user">
+        <MappingFragment StoreEntitySet="voter_user">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="national_id" ColumnName="national_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="district_id" ColumnName="district_id" />
+          <ScalarProperty Name="birth_date" ColumnName="birth_date" />
+          <ScalarProperty Name="gender" ColumnName="gender" />
+          <ScalarProperty Name="religion" ColumnName="religion" />
+          <ScalarProperty Name="ethnicity" ColumnName="ethnicity" />
+          <ScalarProperty Name="has_locally_voted" ColumnName="has_locally_voted" />
+          <ScalarProperty Name="has_party_voted" ColumnName="has_party_voted" />
+          <ScalarProperty Name="first_login" ColumnName="first_login" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
